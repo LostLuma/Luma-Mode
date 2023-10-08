@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 @Mixin(RemoteConnection.class)
 public class RemoteConnectionMixin {
-	private static final String[] IGNORED = {"Bad packet id 5", "Received string length longer than maximum"};
+	private static final String[] IGNORED = {"Bad packet id", "Received string length longer than maximum"};
 
 	/**
 	 * Stop logging exceptions when failing to establish connections to modern protocol clients.
