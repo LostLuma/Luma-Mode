@@ -1,0 +1,49 @@
+plugins {
+	id 'maven-publish'
+	alias libs.plugins.quilt.loom
+	alias libs.plugins.ploceus
+}
+
+apply from: "${rootProject.projectDir}/gradle/common.gradle"
+
+group = project.maven_group
+version = generateVersionWithMetadata()
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {}
+
+dependencies {
+	minecraft libs.minecraft
+
+	mappings loom.layered {
+		mappings variantOf(libs.feather) { classifier("v2") }
+		addLayer ploceus.nestedMappings() // Required for nests
+	}
+
+	nests libs.nests
+	modImplementation libs.quilt.loader
+}
+
+jar {
+	from('LICENSE')
+}
+
+// Configure the maven publication
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	repositories {
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
+	}
+}

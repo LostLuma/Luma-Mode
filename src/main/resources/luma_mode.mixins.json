@@ -1,0 +1,20 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.lostluma.luma_mode.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [],
+    "client": [],
+    "server": [
+        "BedBlockMixin",
+        "DedicatedServerMixin",
+        "EndermanEntityMixin",
+        "LightningBoltEntityMixin",
+        "ServerPlayerInteractionManagerMixin",
+        "logging.RemoteConnectionMixin",
+        "logging.ServerLoginNetworkHandlerMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

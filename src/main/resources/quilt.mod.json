@@ -1,0 +1,36 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "net.lostluma",
+        "id": "luma_mode",
+        "version": "${version}",
+        "metadata": {
+            "name": "Luma Mode",
+            "description": "Changes to survival Minecraft to turn it into a more authentic and fun experience.",
+            "contributors": {
+                "LostLuma": "Owner"
+            },
+            "contact": {
+                "homepage": "https://go.lostluma.net/luma-mode",
+                "issues": "https://go.lostluma.net/luma-mode-issues",
+                "sources": "https://go.lostluma.net/luma-mode-source"
+            }
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "depends": [
+            {
+                "id": "minecraft",
+                "versions": "=1.3.2"
+            },
+            {
+                "id": "java",
+                "versions": ">=17.0.0"
+            },
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.20.2"
+            }
+        ]
+    },
+    "mixin": "luma_mode.mixins.json"
+}
