@@ -5,10 +5,16 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
+import java.util.Arrays;
 import java.util.logging.Logger;
 
 @Mixin(ServerLoginNetworkHandler.class)
 public class ServerLoginNetworkHandlerMixin {
+	private static final String[] IGNORED = {
+		"Protocol error",
+		"Took too long to log in"
+	};
+
 	/**
 	 * Don't log disconnects of modern protocol clients.
 	 */
@@ -17,7 +23,7 @@ public class ServerLoginNetworkHandlerMixin {
 		at = @At(value = "INVOKE", target = "Ljava/util/logging/Logger;info(Ljava/lang/String;)V")
 	)
 	private void disconnect(Logger logger, String message) {
-		if (!message.endsWith("Protocol error")) {
+		if (Arrays.stream(IGNORED).noneMatch(message::endsWith)) {
 			logger.info(message);
 		}
 	}
