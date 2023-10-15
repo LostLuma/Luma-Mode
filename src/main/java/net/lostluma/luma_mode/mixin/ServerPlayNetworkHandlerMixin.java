@@ -9,7 +9,7 @@ public class ServerPlayNetworkHandlerMixin {
 	/**
 	 * Set the effective spawn protection distance to 0, removing the OP requirement.
 	 */
-	@ModifyConstant(method = "handlePlayerHandAction", constant = @Constant(intValue = 16))
+	@ModifyConstant(method = { "handlePlayerHandAction", "handlePlayerUse" }, constant = @Constant(intValue = 16))
 	private int spawnProtectionRange(int value) {
 		return 0;
 	}
