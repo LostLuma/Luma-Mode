@@ -25,7 +25,7 @@ public class ServerPlayerInteractionManagerMixin {
 	 */
 	@Inject(method = "tryMineBlock", at = @At("HEAD"), cancellable = true)
 	private void tryMineBlock(int x, int y, int z, CallbackInfoReturnable<Boolean> callbackInfo) {
-		var stack = this.player.inventory.getStack(this.player.inventory.selectedSlot);
+		var stack = this.player.inventory.getMainHandStack();
 		var speed = Block.BY_ID[this.world.getBlock(x, y, z)].getMiningSpeed(this.world, x, y, z);
 
 		if (stack != null && speed == 0.0f && stack.getItem().getClass().equals(SwordItem.class)) {
