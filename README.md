@@ -10,6 +10,8 @@ For Minecraft 1.3:
 - Enderman griefing is disabled
 - Fire from lightning no longer destroys blocks
 - Set difficulty to hard by default
+- Disable spawn protection
+  - There's no vanilla option for this yet
 - Beds have functionality removed, are decoration instead:
     - No longer allow skipping the night
     - No longer change the player's spawn point
