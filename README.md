@@ -23,13 +23,14 @@ For Minecraft 1.4:
 
 - Disable natural regeneration (Enable UHC mode from 1.6)
     - Players will have to set up beacons for permanent health regeneration
-- Maybe make beacons use up potions (at a slower rate than usual)
-    - Length scales based on pyramid size and material
-    - Requires making Haste and Resistance potions craftable
 
 For Minecraft 1.5:
 
 - Prevent sprinting up stairs
+- Make beacons use up potions to give out effects
+    - Length scales based on pyramid size and material
+    - Requires making Haste and Resistance potions craftable
+    - This can now be automated, and should be a fun challenge
 
 For Minecraft 1.6:
 

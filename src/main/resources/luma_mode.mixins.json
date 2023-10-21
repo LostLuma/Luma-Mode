@@ -9,9 +9,9 @@
         "BedBlockMixin",
         "DedicatedServerMixin",
         "EndermanEntityMixin",
+        "HungerManagerMixin",
         "LightningBoltEntityMixin",
         "ServerPlayerInteractionManagerMixin",
-        "ServerPlayNetworkHandlerMixin",
         "logging.RemoteConnectionMixin",
         "logging.ServerLoginNetworkHandlerMixin"
     ],
