@@ -8,6 +8,9 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(HungerManager.class)
 public class HungerManagerMixin {
+	/**
+	 * Pretend the player's health is always full to disable health regeneration via food.
+	 */
 	@Redirect(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/living/player/PlayerEntity;needsHealing()Z"))
 	private boolean needsHealing(PlayerEntity player) {
 		return false;
