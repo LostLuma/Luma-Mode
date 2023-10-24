@@ -1,7 +1,9 @@
 # Luma Mode
 
-Changes to survival Minecraft to turn it into a more authentic and fun experience.  
+Changes to survival Minecraft to turn it into a more fun experience for myself.  
 This is achieved through a combination of feature forward-ports and small server-side changes.
+
+Since I do not expect usage of this mod there are no releases or further documentation at this time.
 
 ## Changes
 
@@ -17,12 +19,15 @@ For Minecraft 1.3:
     - No longer change the player's spawn point
 - Players can not accidentally destroy blocks with weapons during combat
 
-## Future Ideas
-
 For Minecraft 1.4:
 
 - Disable natural regeneration (Enable UHC mode from 1.6)
     - Players will have to set up beacons for permanent health regeneration
+
+## Future Ideas
+
+Non-version-specific:
+- Disable Wolf and Ocelot targeting other passive mobs
 
 For Minecraft 1.5:
 
@@ -43,8 +48,6 @@ For Minecraft 1.8:
     - Maybe make it less potent if the area is lit up
 - Endermite stop attracting Endermen after some time
     - Endermen farms being no effort is pretty lame ...
-- Set `reducedDebugInfo` rule to `true` by default
-- Maybe implement minecart changes from snapshot 14w11a
 
 For Minecraft 1.9:
 
