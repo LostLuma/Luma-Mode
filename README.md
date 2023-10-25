@@ -23,11 +23,10 @@ For Minecraft 1.4:
 
 - Disable natural regeneration (Enable UHC mode from 1.6)
     - Players will have to set up beacons for permanent health regeneration
+- Wolves and Ocelots no longer target other passive mobs
+    - I do not enjoy this mechanic and would rather see more passive mobs around
 
 ## Future Ideas
-
-Non-version-specific:
-- Disable Wolf and Ocelot targeting other passive mobs
 
 For Minecraft 1.5:
 

@@ -12,6 +12,7 @@
         "HungerManagerMixin",
         "LightningBoltEntityMixin",
         "ServerPlayerInteractionManagerMixin",
+        "UntamedActiveTargetGoalMixin",
         "logging.RemoteConnectionMixin",
         "logging.ServerLoginNetworkHandlerMixin"
     ],
