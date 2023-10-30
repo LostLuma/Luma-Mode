@@ -60,6 +60,7 @@ For Minecraft 1.9:
 For Minecraft 1.11:
 
 - Remove firework rocket boosting for elytra
+    - Add fire / lava updraft boosting instead, similarly to legacy console edition
 
 For Minecraft 1.12:
 
