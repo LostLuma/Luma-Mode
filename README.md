@@ -3,6 +3,10 @@
 Changes to survival Minecraft to turn it into a more fun experience for myself.  
 This is achieved through a combination of feature forward-ports and small server-side changes.
 
+Luma Mode has two primary purposes for my playthrough:
+- Add some additional difficulty to Minecraft
+- Remove any non-player interactions which permanently remove blocks and/or entities
+
 Since I do not expect usage of this mod there are no releases or further documentation at this time.
 
 ## Changes
@@ -23,8 +27,8 @@ For Minecraft 1.4:
 
 - Disable natural regeneration (Enable UHC mode from 1.6)
     - Players will have to set up beacons for permanent health regeneration
-- Animals can no longer be damaged by lightning
-    - I do not enjoy this mechanic and would rather see more passive mobs around
+- Sheep don't eat and thus permanently remove tall grass
+- Animals can no longer be damaged / killed by lightning
 - Wolves and Ocelots no longer target other passive mobs
     - I do not enjoy this mechanic and would rather see more passive mobs around
 

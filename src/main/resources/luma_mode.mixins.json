@@ -8,6 +8,7 @@
     "server": [
         "BedBlockMixin",
         "DedicatedServerMixin",
+        "EatGrassGoalMixin",
         "EndermanEntityMixin",
         "HungerManagerMixin",
         "LightningBoltEntityMixin",
