@@ -23,6 +23,8 @@ For Minecraft 1.4:
 
 - Disable natural regeneration (Enable UHC mode from 1.6)
     - Players will have to set up beacons for permanent health regeneration
+- Animals can no longer be damaged by lightning
+    - I do not enjoy this mechanic and would rather see more passive mobs around
 - Wolves and Ocelots no longer target other passive mobs
     - I do not enjoy this mechanic and would rather see more passive mobs around
 

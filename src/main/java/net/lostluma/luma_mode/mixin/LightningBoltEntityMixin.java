@@ -1,7 +1,7 @@
 package net.lostluma.luma_mode.mixin;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.living.player.PlayerEntity;
+import net.minecraft.entity.living.mob.passive.animal.AnimalEntity;
 import net.minecraft.entity.weather.LightningBoltEntity;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -22,7 +22,7 @@ public class LightningBoltEntityMixin {
 	}
 
 	/**
-	 * Stop non-player entities from receiving lightning damage, as it just makes the world empty over time.
+	 * Prevents animals from being damaged by lightning, to preserve the world's fauna.
 	 */
 	@Redirect(
 		method = "tick",
@@ -31,7 +31,7 @@ public class LightningBoltEntityMixin {
 			target = "Lnet/minecraft/entity/Entity;onLightningStrike(Lnet/minecraft/entity/weather/LightningBoltEntity;)V")
 	)
 	private void onLightningStrike(Entity entity, LightningBoltEntity lightning) {
-		if (entity instanceof PlayerEntity) {
+		if (!(entity instanceof AnimalEntity)) {
 			entity.onLightningStrike(lightning);
 		}
 	}
