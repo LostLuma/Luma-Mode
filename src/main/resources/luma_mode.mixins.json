@@ -7,15 +7,11 @@
     "client": [],
     "server": [
         "BedBlockMixin",
-        "DedicatedServerMixin",
-        "EatGrassGoalMixin",
         "EndermanEntityMixin",
-        "HungerManagerMixin",
         "LightningBoltEntityMixin",
         "ServerPlayerInteractionManagerMixin",
-        "UntamedActiveTargetGoalMixin",
-        "logging.RemoteConnectionMixin",
-        "logging.ServerLoginNetworkHandlerMixin"
+        "SheepEntityMixin",
+        "WolfEntityMixin"
     ],
     "injectors": {
         "defaultRequire": 1

@@ -10,13 +10,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(EndermanEntity.class)
 public class EndermanEntityMixin {
 	@Shadow
-	private static boolean[] blocksToPickup;
+	private static boolean[] HOLDABLE_BLOCKS;
 
 	/**
 	 * Clear the list of blocks Endermen can pick up.
 	 */
 	@Inject(method = "<clinit>", at = @At("TAIL"))
 	private static void clinit(CallbackInfo callbackInfo) {
-		blocksToPickup = new boolean[256];
+		HOLDABLE_BLOCKS = new boolean[256];
 	}
 }
