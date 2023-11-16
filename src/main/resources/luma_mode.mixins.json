@@ -10,6 +10,7 @@
         "DedicatedServerMixin",
         "EatGrassGoalMixin",
         "EndermanEntityMixin",
+        "EntityMixin",
         "HungerManagerMixin",
         "LightningBoltEntityMixin",
         "ServerPlayerInteractionManagerMixin",
