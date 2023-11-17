@@ -31,6 +31,9 @@ For Minecraft 1.4:
 - Animals can no longer be damaged / killed by lightning
 - Wolves and Ocelots no longer target other passive mobs
     - I do not enjoy this mechanic and would rather see more passive mobs around
+- Nether Wart grows at a third of its regular speed in non-Nether dimensions
+    - Gives more reasons to build things in the Nether
+    - Pre 1.3 they didn't grow in non-Nether dimensions, this way they can be built with
 
 ## Future Ideas
 

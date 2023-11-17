@@ -13,6 +13,7 @@
         "EntityMixin",
         "HungerManagerMixin",
         "LightningBoltEntityMixin",
+        "NetherWartBlockMixin",
         "ServerPlayerInteractionManagerMixin",
         "UntamedActiveTargetGoalMixin",
         "logging.RemoteConnectionMixin",
