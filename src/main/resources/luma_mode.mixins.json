@@ -7,6 +7,7 @@
     "client": [],
     "server": [
         "BedBlockMixin",
+        "CommandManagerMixin",
         "DedicatedServerMixin",
         "EatGrassGoalMixin",
         "EndermanEntityMixin",
