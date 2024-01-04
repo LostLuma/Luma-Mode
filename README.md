@@ -29,6 +29,7 @@ For Minecraft 1.4:
     - Players will have to set up beacons for permanent health regeneration
 - Sheep don't eat and thus permanently remove tall grass
 - Animals can no longer be damaged / killed by lightning
+- Players can no longer feed animals that have already eaten recently
 - Wolves and Ocelots no longer target other passive mobs
     - I do not enjoy this mechanic and would rather see more passive mobs around
 - Nether Wart grows at a third of its regular speed in non-Nether dimensions

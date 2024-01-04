@@ -6,6 +6,7 @@
     "mixins": [],
     "client": [],
     "server": [
+        "AnimalEntityMixin",
         "BedBlockMixin",
         "CommandManagerMixin",
         "DedicatedServerMixin",

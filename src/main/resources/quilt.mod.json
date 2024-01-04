@@ -27,10 +27,15 @@
                 "versions": ">=17.0.0"
             },
             {
+                "id": "mixinextras",
+                "versions": ">=0.3.2"
+            },
+            {
                 "id": "quilt_loader",
-                "versions": ">=0.20.2"
+                "versions": ">=0.23.0-"
             }
         ]
     },
-    "mixin": "luma_mode.mixins.json"
+    "mixin": "luma_mode.mixins.json",
+    "access_widener": "luma_mode.accesswidener"
 }

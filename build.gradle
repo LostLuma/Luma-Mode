@@ -27,6 +27,10 @@ dependencies {
 	modImplementation libs.quilt.loader
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/luma_mode.accesswidener")
+}
+
 jar {
 	from('LICENSE')
 }

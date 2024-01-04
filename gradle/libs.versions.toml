@@ -1,6 +1,6 @@
 [versions]
 minecraft = "1.4.7"
-quilt_loader = "0.20.2"
+quilt_loader = "0.23.0"
 
 nests = "1.4.7+build.1"
 feather = "1.4.7+build.19"
@@ -15,5 +15,5 @@ feather = { module = "net.ornithemc:feather", version.ref = "feather" }
 [bundles]
 
 [plugins]
-ploceus = { id = "ploceus", version = "1.4.2" }
+ploceus = { id = "ploceus", version = "1.4.13" }
 quilt_loom = { id = "org.quiltmc.loom", version = "1.4.1" }
