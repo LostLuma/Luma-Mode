@@ -18,6 +18,7 @@
         "NetherWartBlockMixin",
         "ServerPlayerInteractionManagerMixin",
         "UntamedActiveTargetGoalMixin",
+        "debug.LivingEntityMixin",
         "logging.RemoteConnectionMixin",
         "logging.ServerLoginNetworkHandlerMixin"
     ],
