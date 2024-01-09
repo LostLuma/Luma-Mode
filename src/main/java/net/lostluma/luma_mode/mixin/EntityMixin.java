@@ -32,7 +32,7 @@ public class EntityMixin {
 	)
 	private void writeEntityNbt(NbtCompound nbt, CallbackInfo callbackInfo) {
 		var shape = this.shape;
-		nbt.put("AABB", Nbt.asNbtList(shape.minX, shape.minY, shape.minZ, shape.maxX, shape.maxY, shape.maxZ));
+		nbt.put("aabb", Nbt.asNbtList(shape.minX, shape.minY, shape.minZ, shape.maxX, shape.maxY, shape.maxZ));
 	}
 
 	@Inject(
@@ -43,11 +43,15 @@ public class EntityMixin {
 		)
 	)
 	private void readEntityNbt(NbtCompound nbt, CallbackInfo callbackInfo) {
-		if (!nbt.contains("AABB")) {
-			return;
-		}
+		// Previous Luma Mode had capitalized NBT keys
+		// Changed in 1.2.0 to match modern vanilla mc
+		for (var key : new String[]{"aabb", "AABB"}) {
+			if (!nbt.contains(key)) {
+				return;
+			}
 
-		var bounds = Nbt.fromNbtList(nbt.getList("AABB"));
-		this.shape.set(bounds.get(0), bounds.get(1), bounds.get(2), bounds.get(3), bounds.get(4), bounds.get(5));
+			var bounds = Nbt.fromNbtList(nbt.getList(key));
+			this.shape.set(bounds.get(0), bounds.get(1), bounds.get(2), bounds.get(3), bounds.get(4), bounds.get(5));
+		}
 	}
 }
